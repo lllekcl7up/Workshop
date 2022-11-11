@@ -10,4 +10,4 @@ else if(numDay == 4) Console.WriteLine("Четвертый день недели
 else if(numDay == 5) Console.WriteLine("Пятый день недели это Пятница");
 else if(numDay == 6) Console.WriteLine("Шестой день недели это Суббота");
 else if(numDay == 7) Console.WriteLine("Седьмой день недели это Воскресенье");
-else Console.WriteLine("Такого дня недели нет");
+else Console.WriteLine("Такого дня недели нет.");
