@@ -7,6 +7,6 @@ int x = -n;
 
 while (n >= x)
 {
-    Console.WriteLine($"Ряд чисел: {x}");
+    Console.Write($" {x} ");
     x = x + 1;
 }
