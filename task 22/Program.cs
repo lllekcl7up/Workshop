@@ -22,16 +22,27 @@ while (n < 1) // до тех пор пока N не будет больше од
     if ( n < 1 ) Console.WriteLine("Вы ввели неверное число");
 }
 
-string SqrTable(int num)
+// string SqrTable(int num)
+// {
+//     int count = 1;
+//     string table = "";
+//     while (count <= num)
+//     {
+//         table = table + $"{count}|{count * count} \n";
+//         count ++;
+//     }
+//     return table;
+// }
+// string sqrTable = SqrTable(n);
+// Console.WriteLine(sqrTable);
+
+void Square (int num)
 {
     int count = 1;
-    string table = "";
     while (count <= num)
     {
-        table = table + $"{count}|{count * count} \n";
+        Console.WriteLine($"{count}|{count*count}");
         count ++;
     }
-    return table;
 }
-string sqrTable = SqrTable(n);
-Console.WriteLine(sqrTable);
+Square(n);
