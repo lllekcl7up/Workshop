@@ -32,11 +32,11 @@ int firstDigit = num / 10000;
 int fiveDigit = num % 10;
 int secondDigit = num / 1000 % 10;
 int fourthDigit = num / 10 % 10;
-    if (firstDigit == fiveDigit && secondDigit == fourthDigit)
-    {
-        return true;
-    }
-   else return false;
+    return firstDigit == fiveDigit && secondDigit == fourthDigit;
+  //   {
+  //       return true;
+  //   }
+  //  else return false;
 }
 Console.Write("Введите пятизначное число: ");
 int number = Convert.ToInt32(Console.ReadLine());
