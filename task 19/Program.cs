@@ -73,3 +73,38 @@ else
 // }
 // int a = Reverse(number);
 // Console.WriteLine(( a == number) ? "Yes it is Polindrom" : "No it is not");
+
+
+// // Решение Владимира (разворот числа )
+
+// Console.Write("Введите любое число:");
+// int number = Convert.ToInt32(Console.ReadLine());
+
+// int Palindrom(int num)
+// {
+//     if ( num > 9)
+//     {
+//         int number_digit = 0;// объявили переменные 
+//         int reverse_digit = 0;// объявили переменные 
+//         for ( int i = 0; num > 0; i++)
+//         {
+//             number_digit = num % 10;// получаем последнюю цифру числа
+//             reverse_digit = (reverse_digit + number_digit) * 10; // тут разворачивается число
+//             num = num / 10; // тут мы т основного числа отваливаев последнюю цифру.
+//         }
+//         reverse_digit = reverse_digit / 10;
+//         return ( reverse_digit);
+//     }
+//     return (0);
+// }
+// Palindrom(number);
+// if ( number == Palindrom(number))
+// {
+//       Console.Write("Число является палиндомом");
+// }
+// else if ( number < 10 )
+//       Console.Write("Единичное число заведомо является палиндромом");
+// else if ( number < 0 )
+//       number = number * - 1;
+// else 
+// Console.Write("Число не является палиндромом");
