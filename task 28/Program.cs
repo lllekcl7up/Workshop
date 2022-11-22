@@ -7,7 +7,7 @@
 
 int SumDigits(int num)
 {
-    int sum = default; // иницилизация переменной по умолчанию НУЛЕМ !
+    int sum = 1; // иницилизация переменной по умолчанию НУЛЕМ !
     for (int i = 1; i <= num ; i++)
     {
         sum = sum * i; // тут мы в переменную SUM кладем SUM + i 
