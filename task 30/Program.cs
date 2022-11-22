@@ -22,27 +22,27 @@
 // int [] array = new int [8];
 // int[] arr = new int[n];
 // Random rnd = new Random();
-int[] arr = new int[8];
+int[] array = new int[8];
 
-void RandomAray (int[] array)
+void RandomArray (int[] arrayA) // этот метод создает массив
 {
-     Random rnd = new Random();
-    for (int i =0; i < array.Length; i++)
+     Random rnd = new Random(); // тут переменную которая будет генерировать рандом
+    for (int i =0; i < arrayA.Length; i++) // счетчик наполнения массива 
     {
-        array[i] = rnd.Next(0, 2);
+        arrayA[i] = rnd.Next(0, 2); // а тут генерация чисел 
     }
 }
 
-void PrintArray (int[] array)
+void PrintArray (int[] arrayB) // этот метод выводит на печать 
 {
-    for (int i =0; i < array.Length; i++)
+    for (int i =0; i < arrayB.Length; i++) // счетчик вывода
     {
-        Console.Write($" {array[i]} ");
+        Console.Write($" {arrayB[i]} "); // вывод
     }
 }
 
-RandomAray(arr);
-PrintArray(arr);
+RandomArray(array);
+PrintArray(array);
 
 // for (int i = 0; i < arr.Length; i++)
 // {
