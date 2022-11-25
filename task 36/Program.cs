@@ -31,7 +31,6 @@ void PrintArray(int[] array, string symbA, string symbB)
 int FinderSumOddElem ( int [] array )
 {
     int sumOddElem = default;
-    //int num = default;
     for (int index = 0; index < array.Length; index = index + 1)
     {
         if ( index % 2 != 0 ) 
@@ -39,6 +38,7 @@ int FinderSumOddElem ( int [] array )
     }
     return sumOddElem;
 } 
+
 int [] arrayCreate = CreateArrayRandomInt(4, 0, 10);
 PrintArray(arrayCreate, "[", "]");
 int finderSumOddElem = FinderSumOddElem(arrayCreate);
