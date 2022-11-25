@@ -39,6 +39,7 @@ int [] NewArray( int[] array)
     if (array.Length % 2 == 1) newArray[newArraySize - 1] = array[array.Length / 2];
     return newArray;
 }
+
 int [] array = CreateArrayRandomInt ( 5, 0, 10);
 PrintArray(array);
 int[] newArr = NewArray(array);
