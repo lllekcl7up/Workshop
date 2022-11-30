@@ -33,3 +33,57 @@ double findX = FindX(ba,bb,ka,kb);
 double findY = FindY(ba,bb,ka,kb);
 
 Console.WriteLine($"Две прямые пересекутся в точке с координатами X: {Math.Round(findX,2)} Y: {Math.Round(findY,2)}");
+
+// Решение через методы с массивом
+
+// int[] GetNumbers(int size)
+// {
+// int[] array = new int [size];
+//     for (int i=0; i < array.Length; i++)
+//            {         
+//               Console.Write($"Введите координаты: "); 
+//               int n = Convert.ToInt32(Console.ReadLine());
+//             array[i] = n;
+//             }
+// return array;
+// }
+
+// // void PrintArray(int[] arr)
+// // {
+// //     Console.Write("[");
+// //     for (int i = 0; i < arr.Length; i++)
+// //     {
+// //         if (i < arr.Length - 1) Console.Write($"{arr[i]}, ");
+// //         else Console.Write($"{arr[i]}");
+// //     }
+// //     Console.WriteLine("]");
+// // }
+
+// double GetDigitsX(int [] array)
+// {
+//     double b1 = array[0];
+//     double k1 = array[1];
+//     double b2 = array[2];
+//     double k2 = array[3];
+
+//  double x = (b1 - b2)/(k1-k2);
+//     return x;    
+// }
+
+// double GetDigitsY(int [] array)
+// {
+//     double b1 = array[0];
+//     double k1 = array[1];
+//     double b2 = array[2];
+//     double k2 = array[3];
+
+//    double y =k1 * (b2 - b1)/(k1-k2) + b1;
+//     return y;   
+// }
+
+// int [] array = GetNumbers(4);
+// // PrintArray(array);
+// double getDigitsX = GetDigitsX(array);
+// double getDigitsY = GetDigitsY(array);
+
+// Console.WriteLine($"Две прямые пересекутся в точке с координатами X: {Math.Round(getDigitsX,2)} Y: {Math.Round(getDigitsY,2)}");
