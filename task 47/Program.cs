@@ -28,7 +28,7 @@ void PrintMatrix(double [,] matrix)
         for (int j = 0; j <matrix.GetLength(1); j++)
         {
             if (j < matrix.GetLength(1) -1)
-            Console.Write($"{matrix[i,j], 7 }");
+            Console.Write($"{matrix[i,j], 7 }|");
                 else Console.Write($"{matrix[i,j],7 }");
         }
     Console.WriteLine("|");
