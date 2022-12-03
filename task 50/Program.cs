@@ -34,7 +34,7 @@ void PrintMatrix(int[,] matrix)
         for (int j = 0; j < matrix.GetLength(1); j++)
         {
             if (j < matrix.GetLength(1) - 1)
-                Console.Write($"{matrix[i, j],4}");
+                Console.Write($"{matrix[i, j],4}|");
             else Console.Write($"{matrix[i, j],4}");
         }
         Console.WriteLine("|");
@@ -48,8 +48,8 @@ bool CheckValue(int[,] matrix)
     return true;
 }
 
-int[,] array2D = CreateMatrixRandomInt(6, 8, 1, 10);
+int[,] array2D = CreateMatrixRandomInt(3, 4, 1, 10);
 PrintMatrix(array2D);
-Console.WriteLine(CheckValue(array2D) ? $"Число в таблице по адресу [{rows},{columns}] = {array2D[rows, columns]}"
-                                                            : "Такого числа в таблице нет");
+Console.WriteLine(CheckValue(array2D) 
+? $"Число в таблице по адресу [{rows},{columns}] = {array2D[rows, columns]}": "Такого числа в таблице нет");
 
