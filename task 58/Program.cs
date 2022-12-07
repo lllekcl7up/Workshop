@@ -37,30 +37,30 @@ void PrintMatrix(int[,] matrix)
     }
 }
 
-int [,] MultiplicationMatrix ( int [,] firstArray2d, int [,] secondArray2d)
+int[,] MultiplicationMatrix(int[,] firstArray2d, int[,] secondArray2d)
 {
-        int [,] multiArray = new int [firstArray2d.GetLength(0),firstArray2d.GetLength(1)];
-for (int i = 0; i < firstArray2d.GetLength(0); i++)
-{
-    for (int j = 0; j < secondArray2d.GetLength(1); j++)
+    int[,] multiArray = new int[firstArray2d.GetLength(0), firstArray2d.GetLength(1)];
+    for (int i = 0; i < firstArray2d.GetLength(0); i++)
     {
-        for (int k = 0; k < firstArray2d.GetLength(1); k++)
+        for (int j = 0; j < secondArray2d.GetLength(1); j++)
         {
-            multiArray[i, j] += firstArray2d[i, k] * secondArray2d[k, j];
+            for (int k = 0; k < firstArray2d.GetLength(1); k++)
+            {
+                multiArray[i, j] += firstArray2d[i, k] * secondArray2d[k, j];
+            }
         }
     }
-}
-return multiArray;
+    return multiArray;
 }
 
-int [,] firstArray2d = CreateMatrixRandomInt(2,2,1,10); 
-int [,] secondArray2d = CreateMatrixRandomInt(2,2,1,10);
+int [,] firstArray2D = CreateMatrixRandomInt(2,2,1,10); 
+int [,] secondArray2D = CreateMatrixRandomInt(2,2,1,10);
 Console.WriteLine("Первая матрица \n     ↓");
-PrintMatrix(firstArray2d);
+PrintMatrix(firstArray2D);
 Console.WriteLine("Вторая матрица: \n     ↓");
-PrintMatrix(secondArray2d);
+PrintMatrix(secondArray2D);
 Console.WriteLine("Произведение двух матриц: \n     ↓");
-int [,] multi = MultiplicationMatrix(firstArray2d,secondArray2d);
-PrintMatrix(multi);
+int [,] multiplicationMatrix = MultiplicationMatrix(firstArray2D,secondArray2D);
+PrintMatrix(multiplicationMatrix);
 
 
