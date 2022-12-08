@@ -43,7 +43,7 @@ void PrintMatrix3D(int[,,] matrix3D)
     }
 }
 
-int [,,] array3D = CreateMatrix3DNoRepeatTwoDigit(2,2,2,10,99); 
+int [,,] array3D = CreateMatrix3DNoRepeatTwoDigit(2,2,2,10,80); 
 PrintMatrix3D(array3D);
 
 
