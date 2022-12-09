@@ -6,17 +6,17 @@
 Console.WriteLine("Введите число: ");
 int number = Convert.ToInt32(Console.ReadLine());
 
-int SumNumRecurs(int num)
+int SumDigits(int num)
 {
     int sum = 0;
     if (num % 10 == 0) return sum;
-    sum =  sum + num %10 + SumNumRecurs(num/10);
+    sum =  sum + num %10 + SumDigits(num/10);
     return sum;
 }
-// int sumNum = SumNumRecurs(number);
+// int sumNum = SumDigits(number);
 // Console.WriteLine($"{sumNum}");
 // Можно вызывать метод или так или так 
-Console.WriteLine(SumNumRecurs(Math.Abs(number)));
+Console.WriteLine(SumDigits(Math.Abs(number)));
 
 // Вариант решения через торенарный оператор
 // int SumDigits (int numb)
